@@ -22,7 +22,7 @@ repository               : "dhruv-gohil/dhruv-gohil.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "bio-photo.jpg"
   name             : "Dhruv Gohil"
   pronouns         :  "he/him"  
   bio              : "Chemical Engineering MS Candidate at UCLA"
