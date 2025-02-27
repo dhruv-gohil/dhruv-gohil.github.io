@@ -32,6 +32,14 @@ $navicon-width              : 28px;
 $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
+// Override social icons color in dark theme
+.author__urls.social-icons .fa,
+.author__urls.social-icons .fab,
+.author__urls.social-icons .fas,
+.author__urls.social-icons svg {
+  color: var(--global-text-color);
+  fill: var(--global-text-color);
+}
 
 /* Dark theme for the site */
 :root {
