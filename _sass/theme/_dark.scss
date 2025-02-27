@@ -8,6 +8,7 @@ $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 
+
 $background                 : #000000;  // Set to true black background
 $background-light           : mix(#fff, $background, 80%);
 $background-lighter         : mix(#fff, $background, 90%);
@@ -33,6 +34,20 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 // Override social icons color in dark theme
+.author__urls {
+    background-color: #000000; /* Same dark gray as your footer or #000000 for true black */
+    border-color: var(--global-border-color);
+  }
+  
+  .author__urls li {
+    color: var(--global-text-color);
+  }
+  
+  .author__urls a {
+    color: var(--global-text-color);
+  }
+  
+
 .author__urls.social-icons .fa,
 .author__urls.social-icons .fab,
 .author__urls.social-icons .fas,
