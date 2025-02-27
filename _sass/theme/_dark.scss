@@ -28,7 +28,6 @@ $navicon-width : 28px;
 $navicon-height : 4px;
 $sidebar-link-max-width : 250px;
 $sidebar-screen-min-width : 1024px;
-
 /* Dark theme for the site */
 :root {
   --global-base-color : #{$background};
@@ -46,43 +45,52 @@ $sidebar-screen-min-width : 1024px;
   --global-text-color-light : #{$light-gray};
   --global-thead-color : #{$background-lighter};
 }
-
 /* Fix for social icons in dark theme */
 .author__urls.social-icons .fa,
 .author__urls.social-icons .fab,
 .author__urls.social-icons .fas,
 .author__urls.social-icons svg {
-  color: var(--global-text-color);
-  fill: var(--global-text-color);
+  color: var(--global-text-color) !important;
+  fill: var(--global-text-color) !important;
 }
-
 /* Fix for mobile dropdown menu */
 .author__urls {
-  background-color: #121212;
+  background-color: #000000 !important;
   border-color: var(--global-border-color);
 }
-
 .author__urls li {
-  color: var(--global-text-color);
+  color: var(--global-text-color) !important;
 }
-
 .author__urls a {
-  color: var(--global-text-color);
+  color: var(--global-text-color) !important;
+}
+.follow {
+  background-color: #000000 !important;
+  color: var(--global-text-color) !important;
+  border: 1px solid var(--global-border-color);
+}
+.follow:active, .follow:focus, .follow:hover {
+  background-color: #000000 !important;
+  color: var(--global-text-color) !important;
+}
+/* For the container that appears when follow is clicked */
+.author__urls-wrapper {
+  background-color: #000000 !important;
+  z-index: 20;
 }
 
-.follow {
-    background-color: var(--global-bg-color);
-    color: var(--global-text-color);
-    border: 1px solid var(--global-border-color);
-  }
-  
-  .follow:active, .follow:focus {
-    background-color: var(--global-bg-color);
-    color: var(--global-text-color);
-  }
-  
-  /* For the container that appears when follow is clicked */
-  .author__urls-wrapper {
-    background-color: var(--global-bg-color);
-    z-index: 20;
-  }
+/* Additional fixes for follow menu */
+.hidden {
+  background-color: #000000 !important;
+}
+
+/* Force social icons to remain visible on dark background */
+.social-icons {
+  background-color: transparent !important;
+  z-index: 30;
+  position: relative;
+}
+
+.social-icons a {
+  color: var(--global-text-color) !important;
+}
