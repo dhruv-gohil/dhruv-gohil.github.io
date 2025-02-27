@@ -4,7 +4,7 @@
 
 .page__footer {
   @include clearfix;
-  background-color: var(--global-code-text-color );
+  background-color: mix(#000, $gray, 80%);
   color: var(--global-text-color-light);
 
   float: left;
