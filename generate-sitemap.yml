@@ -1,0 +1,4 @@
+- name: generate-sitemap
+  uses: cicirello/generate-sitemap@v1.8.1
+  with:
+        base-url-path: https://dhruv-gohil.github.io
