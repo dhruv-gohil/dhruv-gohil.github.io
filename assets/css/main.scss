@@ -9,6 +9,8 @@
  */
 
  @import "vendor/breakpoint/breakpoint"; // media query mixins
+ @import "themes";
+ @import "theme/{{ site.site_theme | default: 'default' }}";
  @import "variables";
  @import "mixins";
  @import "vendor/susy/susy";
