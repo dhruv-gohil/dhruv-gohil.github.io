@@ -11,7 +11,7 @@
 @import 
     "vendor/breakpoint/breakpoint",
     "themes",
-    "theme/dark", // Ensure this is pointing to your dark theme
+    "theme/default", // Ensure this is pointing to your dark theme
     "include/mixins",
     "vendor/susy/susy",
     "layout/reset",
@@ -34,4 +34,4 @@
     "vendor/magnific-popup/magnific-popup";
 
 // Import dark theme styles last to ensure they override any previous styles
-@import "theme/dark"; 
+@import "theme/default"; 
