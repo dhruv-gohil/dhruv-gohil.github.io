@@ -87,17 +87,17 @@
   box-shadow: none;
   opacity: 0.65;
    }
-  /* follow button */
-  &--follow {
-  color: #000 !important;
-  background-color: #fff;
-  border: 1px solid #000 !important; /* override */
-  &:hover {
-  background-color: #f8f8f8;
-  color: #000 !important;
-  border-color: #000;
-   }
-   }
+ .profile-follow-btn.btn {
+    color: #000 !important;
+    background-color: #fff !important;
+    border: 1px solid #000 !important;
+    
+    &:hover {
+      background-color: #f8f8f8 !important;
+      color: #000 !important;
+      border-color: #000 !important;
+    }
+  }
   /* social buttons */
   $social:
    (facebook, $facebook-color),
